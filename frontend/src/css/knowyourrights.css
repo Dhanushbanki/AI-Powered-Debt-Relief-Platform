@@ -1,0 +1,404 @@
+@import "./Dashboard.css";
+
+/* ===========================
+   Banner
+=========================== */
+
+.rights-banner{
+
+background:#1e293b;
+
+border:1px solid #334155;
+
+border-radius:14px;
+
+padding:25px;
+
+margin-top:20px;
+
+margin-bottom:25px;
+
+}
+
+.rights-banner h2{
+
+color:white;
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+.rights-banner p{
+
+color:#cbd5e1;
+
+line-height:1.8;
+
+font-size:15px;
+
+}
+
+/* ===========================
+   Rights Grid
+=========================== */
+
+.rights-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+margin-top:25px;
+
+margin-bottom:30px;
+
+}
+
+/* ===========================
+   Right Card
+=========================== */
+
+.right-card{
+
+background:#1e293b;
+
+border:2px solid;
+
+border-radius:14px;
+
+padding:22px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.right-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.right-icon{
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:28px;
+
+margin-bottom:18px;
+
+color:white;
+
+}
+
+.right-card h3{
+
+color:white;
+
+margin-bottom:12px;
+
+font-size:20px;
+
+}
+
+.right-card p{
+
+color:#cbd5e1;
+
+font-size:14px;
+
+line-height:1.7;
+
+}
+/* ===========================
+   Steps Section
+=========================== */
+
+.steps-card{
+
+background:#1e293b;
+
+border:1px solid #334155;
+
+border-radius:14px;
+
+padding:25px;
+
+margin-top:20px;
+
+margin-bottom:25px;
+
+}
+
+.steps-card h2{
+
+color:white;
+
+margin-bottom:8px;
+
+}
+
+.steps-card p{
+
+color:#94a3b8;
+
+margin-bottom:20px;
+
+}
+
+.steps-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+}
+
+.step-box{
+
+background:#111827;
+
+border:1px solid #374151;
+
+border-radius:12px;
+
+padding:20px;
+
+transition:.3s;
+
+}
+
+.step-box:hover{
+
+transform:translateY(-5px);
+
+border-color:#3b82f6;
+
+}
+
+.step-box h1{
+
+color:#3b82f6;
+
+font-size:32px;
+
+margin-bottom:12px;
+
+}
+
+.step-box h3{
+
+color:white;
+
+margin-bottom:10px;
+
+}
+
+.step-box p{
+
+color:#cbd5e1;
+
+line-height:1.6;
+
+}
+
+/* ===========================
+   Ombudsman Card
+=========================== */
+
+.ombudsman-card{
+
+background:#1e293b;
+
+border:1px solid #334155;
+
+border-radius:14px;
+
+padding:25px;
+
+margin-top:20px;
+
+text-align:center;
+
+}
+
+.ombudsman-card h2{
+
+color:white;
+
+margin-bottom:15px;
+
+}
+
+.ombudsman-card p{
+
+color:#cbd5e1;
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+.complaint-btn{
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+padding:12px 24px;
+
+border-radius:8px;
+
+font-size:15px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.complaint-btn:hover{
+
+background:#1d4ed8;
+
+}
+
+/* ===========================
+   Modal Popup
+=========================== */
+
+.modal-overlay{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.7);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:1000;
+
+}
+
+.modal-card{
+
+width:600px;
+
+background:#1e293b;
+
+border-radius:14px;
+
+padding:30px;
+
+border:1px solid #334155;
+
+}
+
+.modal-card h2{
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+.modal-card p{
+
+color:#d1d5db;
+
+line-height:1.8;
+
+margin-bottom:25px;
+
+}
+
+.close-btn{
+
+background:#ef4444;
+
+color:white;
+
+border:none;
+
+padding:10px 20px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:1200px){
+
+.rights-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.steps-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.rights-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.steps-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.modal-card{
+
+width:90%;
+
+}
+
+}

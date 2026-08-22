@@ -1,0 +1,221 @@
+@import "./Dashboard.css";
+
+/* ===========================
+   History Card
+=========================== */
+
+.history-card{
+
+background:#1e293b;
+
+border:1px solid #334155;
+
+border-radius:14px;
+
+padding:25px;
+
+margin-top:20px;
+
+}
+
+.history-card h2{
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+/* ===========================
+   Table
+=========================== */
+
+.history-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+overflow:hidden;
+
+border-radius:12px;
+
+}
+
+.history-table thead{
+
+background:#111827;
+
+}
+
+.history-table th{
+
+padding:16px;
+
+text-align:left;
+
+color:#e2e8f0;
+
+font-size:15px;
+
+border-bottom:1px solid #374151;
+
+}
+
+.history-table td{
+
+padding:16px;
+
+color:#cbd5e1;
+
+border-bottom:1px solid #374151;
+
+}
+
+.history-table tbody tr{
+
+transition:.3s;
+
+}
+
+.history-table tbody tr:hover{
+
+background:#111827;
+
+}
+/* ===========================
+   Status Badges
+=========================== */
+
+.status{
+
+padding:6px 12px;
+
+border-radius:20px;
+
+font-size:13px;
+
+font-weight:600;
+
+display:inline-block;
+
+}
+
+.completed{
+
+background:#14532d;
+
+color:#22c55e;
+
+}
+
+.generated{
+
+background:#1e3a8a;
+
+color:#60a5fa;
+
+}
+
+.pending{
+
+background:#78350f;
+
+color:#facc15;
+
+}
+
+/* ===========================
+   Delete Button
+=========================== */
+
+.delete-btn{
+
+background:#ef4444;
+
+color:white;
+
+border:none;
+
+padding:8px 16px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:14px;
+
+transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+background:#dc2626;
+
+transform:scale(1.05);
+
+}
+
+/* ===========================
+   Empty Table Message
+=========================== */
+
+.history-table td[colspan]{
+
+text-align:center;
+
+font-size:16px;
+
+padding:30px;
+
+color:#94a3b8;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.history-card{
+
+overflow-x:auto;
+
+}
+
+.history-table{
+
+min-width:800px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.history-card{
+
+padding:18px;
+
+}
+
+.history-table th,
+.history-table td{
+
+padding:12px;
+
+font-size:13px;
+
+}
+
+.delete-btn{
+
+padding:6px 12px;
+
+font-size:12px;
+
+}
+
+}
