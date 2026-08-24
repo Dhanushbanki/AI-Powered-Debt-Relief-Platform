@@ -107,6 +107,23 @@ npm install
 
 npm run dev
 
+## 🖥️ Application Screenshots
+
+### Login
+![Login](screenshots/login.png.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png.png)
+
+### Financial Health
+![Financial Health](screenshots/financial-health.png.png)
+
+### Settlement Predictor
+![Settlement Predictor](screenshots/settlement-predictor.png.png)
+
+### AI Negotiation Strategy
+![AI Negotiation Strategy](screenshots/negotiation-strategy.png.png)
+
 ## 📊 Core Modules
 
 ### Financial Health Analysis
